@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Plus, Trash2, GripVertical, Image as ImageIcon, Video, MonitorPlay, Search, ChevronLeft, ChevronRight, ChevronDown } from 'lucide-react';
+import { useState } from 'react';
+import { Plus, Trash2, GripVertical, Image as ImageIcon, Video, MonitorPlay, ChevronLeft, ChevronRight, ChevronDown } from 'lucide-react';
 
 // 型定義
 type MediaType = 'image' | 'video' | 'ad';
@@ -211,7 +211,7 @@ export default function PlaylistCreator() {
                   </div>
                 ) : (
                   <div className="flex-1 space-y-2 overflow-y-auto max-h-[600px] pr-1">
-                    {playlist.map((item, index) => (
+                    {playlist.map((item) => (
                       <div 
                         key={item.id} 
                         className={`group relative flex items-center gap-3 p-3 rounded-lg border shadow-sm transition-all hover:shadow-md ${

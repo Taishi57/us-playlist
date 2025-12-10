@@ -11,7 +11,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
-  "homepage": "https://Taishi57.github.io/us-playlist",
+  "homepage": "https://taishi57.github.io/us-playlist/",
   "dependencies": {
     "lucide-react": "^0.556.0",
     "react": "^19.2.0",
